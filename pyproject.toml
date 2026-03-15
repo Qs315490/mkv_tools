@@ -1,0 +1,29 @@
+[project]
+name = "mkv_tools"
+version = "0.1.0"
+description = "mkv video and subtitle tools"
+classifiers = ["Private :: Do Not Upload"]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["opencc>=1.2.0", "pymkv2>=2.2.0.post2", "rich>=14.3.3"]
+
+[build-system]
+requires = ["setuptools"]
+
+
+[project.scripts]
+mkv-tools = "main:main"
+
+ass-zhconvert = "ass_zhconvert:main"
+
+mkv-attachments_del = "mkv.attachments_del:main"
+
+mkv-audio_add = "mkv.audio_add:main"
+mkv-audio2_del = "mkv.audio2_del:main"
+
+mkv-sub_add = "mkv.sub_add:main"
+mkv-sub_del = "mkv.sub_del:main"
+mkv-sub_ext = "mkv.sub_ext:main"
+mkv-sub_rename = "mkv.sub_rename:main"
+
+mkv-title_del = "mkv.title_del:main"
