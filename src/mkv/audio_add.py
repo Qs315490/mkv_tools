@@ -32,7 +32,7 @@ def file_work(work_file: str):
 
     if add_track:
         # 在文件目录新建output文件夹
-        mkv.mux(f"./output/{work_file}")
+        mkv.mux(f"./output/{work_file}", silent=True)
 
 
 def main(arg_list: list = argv):
